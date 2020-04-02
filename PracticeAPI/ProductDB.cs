@@ -29,6 +29,7 @@ namespace PracticeAPI
                         cmd.Parameters.AddWithValue("@DOM", obj.DOM);
                         cmd.Parameters.AddWithValue("@DOE", obj.DOE);
                         cmd.Parameters.AddWithValue("@Active", obj.Active);
+                        con.Open();
                         x = cmd.ExecuteNonQuery();
                         return x;
                     }
@@ -58,6 +59,7 @@ namespace PracticeAPI
                         cmd.Parameters.AddWithValue("@DOM", obj.DOM);
                         cmd.Parameters.AddWithValue("@DOE", obj.DOE);
                         cmd.Parameters.AddWithValue("@Active", obj.Active);
+                        con.Open();
                         x = cmd.ExecuteNonQuery();
                         return x;
                     }
@@ -82,7 +84,7 @@ namespace PracticeAPI
                     {
                         cmd.CommandType = CommandType.Text;
                         cmd.CommandText = "SELECT  ID, Name , DOM, DOE,Active fROM Product";
-
+                        con.Open();
                         SqlDataReader reader = cmd.ExecuteReader();
                         if (reader.HasRows)
                         {
@@ -120,6 +122,7 @@ namespace PracticeAPI
                         cmd.CommandType = CommandType.Text;
                         cmd.CommandText = "DELETE FROM PRODUCT WHERE id =@ID";
                         cmd.Parameters.AddWithValue("@ID", Id);
+                        con.Open();
                         x = cmd.ExecuteNonQuery();
                         return x;
                     }
