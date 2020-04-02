@@ -12,6 +12,7 @@ namespace PracticeAPI.Models
         public DateTime DOM { get; set; }
         public DateTime DOE { get; set; }
         public bool Active { get; set; }
+
     
     }
 }
