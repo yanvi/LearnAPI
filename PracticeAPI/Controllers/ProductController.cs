@@ -32,16 +32,16 @@ namespace PracticeAPI.Controllers
             {
 
                 ProductDB obj = new ProductDB();
-               int x = obj.Save(product);
-                
-                    var message = Request.CreateResponse(HttpStatusCode.Created, product);
-                    message.Headers.Location = new Uri(Request.RequestUri +
-                        product.Id.ToString());
-               
-                   
+                int x = obj.Save(product);
 
-                    return message;
-                
+                var message = Request.CreateResponse(HttpStatusCode.Created, product);
+                message.Headers.Location = new Uri(Request.RequestUri +
+                    product.Id.ToString());
+
+
+
+                return message;
+
             }
             catch (Exception ex)
             {
