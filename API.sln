@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeAPI", "PracticeAPI\PracticeAPI.csproj", "{1B6A9CF1-EA75-4CDE-A3E0-4A77A2A64151}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Attribute", "Attribute", "{D0A6C9B2-D852-4E30-9BB5-61ED61FE1C5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAttrubute", "CustomAttrubute\CustomAttrubute.csproj", "{DDDFC860-1CF0-4EB0-95A2-D2E1F26E65A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,15 @@ Global
 		{1B6A9CF1-EA75-4CDE-A3E0-4A77A2A64151}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B6A9CF1-EA75-4CDE-A3E0-4A77A2A64151}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B6A9CF1-EA75-4CDE-A3E0-4A77A2A64151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDDFC860-1CF0-4EB0-95A2-D2E1F26E65A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDDFC860-1CF0-4EB0-95A2-D2E1F26E65A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDDFC860-1CF0-4EB0-95A2-D2E1F26E65A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDDFC860-1CF0-4EB0-95A2-D2E1F26E65A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DDDFC860-1CF0-4EB0-95A2-D2E1F26E65A2} = {D0A6C9B2-D852-4E30-9BB5-61ED61FE1C5B}
 	EndGlobalSection
 EndGlobal
